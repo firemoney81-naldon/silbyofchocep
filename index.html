@@ -1,23 +1,303 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+    <!-- Schema.org LocalBusiness 마크업(JSON-LD) - 금융 정보 서비스로 변경 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "실비보험 치과 보장 가이드 센터",
+      "image": "https://도메인/logo_dental.png",
+      "url": "https://도메인/dental-ppo-guide",
+      "telephone": "031-123-4567",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "경기도 평택시 ○○로 ○○",
+        "addressLocality": "평택시",
+        "addressRegion": "경기",
+        "postalCode": "17900",
+        "addressCountry": "KR"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "대한민국"
+      },
+      "priceRange": "₩₩₩",
+      "description": "실비보험 치과 보장 범위에 대한 전문 정보를 제공합니다. 임플란트, 충치 등 비급여 항목 청구 가이드를 확인하세요."
+    }
+    </script>
+
+    <style>
+      /* 부드럽고 다채로운 색상 + 계층 잘 보이도록 개선 */
+      body { font-family: 'Noto Sans KR', sans-serif; margin:0; padding:0; background:#f0f4f8; color:#333; line-height:1.6; }
+      header, section, footer { max-width:900px; margin:20px auto; padding:20px; background:#ffffff; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.05); }
+      h1, h2, h3 { color:#0b3d91; margin-bottom:12px; }
+      h1 { font-size:2.5rem; }
+      h2 { font-size:2rem; border-bottom:3px solid #a3c4ff; padding-bottom:8px; }
+      h3 { font-size:1.5rem; color:#2c5ea8; margin-top:20px; }
+      p, li, td, th { font-size:1rem; }
+      ul, ol { padding-left:25px; margin-bottom:15px; }
+      table { width:100%; border-collapse: collapse; margin:20px 0; font-size:0.95rem; }
+      th, td { border:1px solid #ccddee; padding:12px; text-align:left; }
+      th { background:#a3c4ff; color:#fff; }
+      a { color:#0b3d91; text-decoration:none; }
+      a:hover { text-decoration:underline; }
+      .btn-cta {
+        display:inline-block;
+        padding:14px 30px;
+        background:#4285f4;
+        color:#fff;
+        font-weight:700;
+        border:none;
+        border-radius:30px;
+        box-shadow:0 6px 10px rgba(66, 133, 244, 0.3);
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        cursor:pointer;
+        text-decoration:none;
+        text-align:center;
+      }
+      .btn-cta:hover {
+        background:#3367d6;
+        transform:translateY(-2px);
+      }
+      .anchor { display:block; position:relative; top:-100px; visibility:hidden; }
+      .warning-box { border:2px solid #ff7f50; background:#fff8e1; padding:15px; border-radius:8px; margin:20px 0; color:#d35400; font-weight:bold; }
+      /* 반응형 */
+      @media(max-width:600px) {
+        body { padding:10px; }
+        header, section, footer { margin:10px auto; padding:15px; }
+        .btn-cta { width:100%; padding:15px 0; }
+        h1 { font-size:2rem; }
+        h2 { font-size:1.5rem; }
+      }
+    </style>
+</head>
+
+<body>
+  <header>
+    <h1>실비보험 치과 보장, 2026년 가이드 완벽 분석</h1>
+    <p>실비보험으로 치과 치료가 가능한지, 임플란트 및 충치 비급여 항목 청구 방법까지 한 번에 알아봅니다.</p>
+    <a class="btn-cta" href="#contact">내 치과 실비 청구 가능성 확인하기</a>
+  </header>
+
+  <nav aria-label="페이지 내 이동">
+    <div style="background:#f9f9f9; padding:15px; border-radius:8px; margin-bottom:20px;">
+        <h3 style="margin-top:0;">목차</h3>
+        <ul>
+            <li><a href="#coverage-guide">실비보험 치과 보장 범위 가이드</a></li>
+            <li><a href="#non-covered-items">비급여 항목과 실비 청구의 관계</a></li>
+            <li><a href="#implants-cavities">임플란트 & 충치 치료 실비 적용</a></li>
+            <li><a href="#claim-procedure">실비 청구 절차 및 필요 서류</a></li>
+            <li><a href="#dental-insurance-comparison">치아보험 vs 실비보험 비교</a></li>
+            <li><a href="#2026-policy">2026년 정책 변화 및 전망</a></li>
+            <li><a href="#faq">자주 묻는 질문 (FAQ)</a></li>
+            <li><a href="#contact">전문가와 무료 상담하기</a></li>
+        </ul>
+    </div>
+  </nav>
+
+  <section id="coverage-guide">
+    <span id="coverage-guide-anchor" class="anchor"></span>
+    <h2>1. 실비보험 치과 보장, 기본 원칙부터 파헤치기</h2>
+    <p>많은 분들이 실비보험(실손의료보험)으로 치과 치료비를 보장받을 수 있다고 오해합니다. 하지만 실비보험은 기본적으로 '국민건강보험법'에서 정한 '급여 항목'에 해당하는 치료비만 보장합니다. 치과 치료의 경우, 대다수의 치료가 비급여 항목에 해당하기 때문에 실비보험 청구에 제약이 많습니다.</p>
+
+    <h3>1-1. 실비보험의 기본 보장 범위 (급여 vs 비급여)</h3>
+    <p>실비보험은 가입자가 실제로 지출한 의료비를 보장하는 보험입니다. 그러나 치과 치료는 '치아 기능 회복 및 보철치료' 관련 비급여 항목이 많아 대부분의 실비보험 약관에서 보장에서 제외됩니다. 비급여 항목이란 건강보험 급여 대상에 포함되지 않는 항목으로, 치료비 전액을 본인이 부담해야 합니다. 실비보험이 보장하는 치과 치료는 다음과 같이 엄격하게 제한됩니다.</p>
+    <ul>
+      <li><strong>국민건강보험 급여 항목:</strong> 실비보험 약관에 따라 90%까지 보장 (표준형 기준). 예를 들어 충치 치료 시 사용하는 아말감이나 X-ray 촬영 비용 중 급여 부분만 보장 가능합니다.</li>
+      <li><strong>외모 개선 목적의 비급여 치료:</strong> 미백, 라미네이트, 심미적인 목적의 보철 치료 등은 실비보험에서 보장하지 않습니다.</li>
+      <li><strong>질병 치료 목적의 비급여 항목:</strong> 임플란트, 크라운, 인레이 등 비급여 치료는 원칙적으로 실비보험 보장이 제외됩니다.</li>
+    </ul>
+
+    <h3>1-2. 2026년 실비보험 치과 보장 전망</h3>
+    <p>실비보험은 2026년에도 큰 폭의 변화가 예상되지 않습니다. 현재의 비급여 항목에 대한 보장 제외 기조는 유지될 가능성이 높습니다. 따라서 실비보험만으로는 임플란트나 크라운과 같은 고가의 치료비를 대비하기 어렵습니다. 2026년 이후의 치과 치료 보장에 대비하기 위해서는 실비보험과 별개로 치아보험을 고려해야 합니다.</p>
+  </section>
+
+  <section id="non-covered-items">
+    <span id="non-covered-items-anchor" class="anchor"></span>
+    <h2>2. 실비보험으로 보장받을 수 없는 치과 비급여 항목 상세 분석</h2>
+    <p>실비보험 가입자들이 가장 혼란스러워하는 부분은 '왜 내 실비보험으로 치과 치료가 안되는가?'입니다. 이는 치과 치료의 특성상 비급여 항목이 압도적으로 많기 때문입니다. 특히 미용 목적이나 기능 회복 목적의 고가 치료는 실비보험의 보장 범위에서 제외됩니다.</p>
+
+    <h3>2-1. 임플란트와 실비보험: 가장 헷갈리는 부분</h3>
+    <p>임플란트는 치아를 상실했을 때 인공 치아를 심는 치료로, 고가의 비급여 치료에 속합니다. 실비보험은 임플란트 시술 자체를 보장하지 않습니다. 다만, 임플란트 시술 중 발생한 합병증이나 다른 질병으로 인한 치료(예: 치과 외래 진료 중 발생한 다른 부위의 염증 치료 등)는 급여 항목에 해당할 경우 실비보험 청구가 가능할 수 있습니다.</p>
+    <div class="warning-box">
+        <h4>중요 알림: 임플란트 실비 보장의 허와 실</h4>
+        <p>임플란트는 '치아 기능 회복'을 위한 비급여 항목으로 분류되어 실비보험 보장이 불가합니다. 국민건강보험에서 정한 만 65세 이상 급여 임플란트(1인당 평생 2개)의 경우에도, 실비보험은 급여 본인부담금만 보장할 뿐, 비급여 임플란트 비용은 보장하지 않습니다.</p>
+    </div>
+
+    <h3>2-2. 충치 치료(인레이, 크라운)와 실비보험</h3>
+    <p>충치 치료 역시 실비보험 청구 가능 여부가 복잡합니다. 충치 치료는 충치의 정도에 따라 아말감, 레진, 인레이, 크라운 등으로 나뉩니다.</p>
+    <ul>
+      <li><strong>아말감 (급여 항목):</strong> 아말감은 건강보험 적용 대상입니다. 따라서 아말감 치료비 중 급여 본인부담금은 실비보험 청구가 가능합니다.</li>
+      <li><strong>레진, 인레이, 크라운 (비급여 항목):</strong> 레진, 인레이, 크라운 치료는 비급여 항목입니다. 따라서 이 치료들은 실비보험에서 보장하지 않습니다. 특히 치아의 떼우는 재료(골드, 세라믹 등)와 크라운 재료는 미용 목적이 강한 것으로 간주되어 실비보험 보장에서 제외됩니다.</li>
+    </ul>
+
+    <h3>2-3. 치주 질환(잇몸 치료) 및 발치</h3>
+    <p>치주 질환으로 인한 잇몸 치료는 급여 항목에 포함되는 경우가 있습니다. 잇몸 치료(스케일링, 치주 소파술) 중 건강보험이 적용되는 부분은 실비보험 청구가 가능합니다. 하지만 잇몸 뼈 이식술, 잇몸 재생술과 같은 고가의 비급여 치료는 실비보험 청구가 어렵습니다. 발치 역시 질병 치료 목적의 급여 발치는 보장이 가능하지만, 사랑니 발치는 단순 발치이므로 실비보험 청구 가능성이 낮습니다.</p>
+  </section>
+
+  <section id="dental-insurance-comparison">
+    <span id="dental-insurance-comparison-anchor" class="anchor"></span>
+    <h2>3. 치아보험 vs 실비보험: 정확한 비교 분석</h2>
+    <p>실비보험으로 치과 치료가 충분하지 않다는 사실을 알게 되었다면, 이제 '치아보험'에 대해 알아볼 차례입니다. 치아보험은 실비보험과 달리 치과 치료를 위해 특화된 보험입니다. 두 보험의 차이점을 명확히 이해해야 중복 가입을 피하고 합리적인 선택을 할 수 있습니다.</p>
+
+    <h3>3-1. 보장 방식의 차이점</h3>
+    <p>실비보험과 치아보험은 보장 방식 자체가 다릅니다. 실비보험은 실제 발생한 치료비의 일부를 돌려받는 '실손' 방식인 반면, 치아보험은 치료 항목별로 정해진 금액을 지급하는 '정액 보장' 방식입니다.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>구분</th>
+          <th>실비보험 (실손의료보험)</th>
+          <th>치아보험 (전용 보험)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>주요 목적</td>
+          <td>질병 및 상해 치료비의 실손 보상</td>
+          <td>치과 치료비(비급여 포함) 정액 보상</td>
+        </tr>
+        <tr>
+          <td>보장 범위</td>
+          <td>원칙적으로 치과 급여 항목만 보장<br />(일부 예외 존재, 약관 확인 필수)</td>
+          <td>비급여 항목(임플란트, 크라운, 인레이) 정액 보상</td>
+        </tr>
+        <tr>
+          <td>가입 조건</td>
+          <td>가입 시점 건강 상태 심사 까다로움</td>
+          <td>가입이 비교적 용이 (면책 기간, 감액 기간 있음)</td>
+        </tr>
+        <tr>
+          <td>중요 키워드</td>
+          <td>실손, 급여 항목, 비급여 제외</td>
+          <td>정액 보장, 비급여 보장, 임플란트 보장</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>3-2. 치아보험의 면책 기간 및 감액 기간</h3>
+    <p>치아보험은 가입 후 일정 기간 동안 보장이 제한되는 '면책 기간'과 보장 금액이 줄어드는 '감액 기간'이 존재합니다. 이는 가입 후 바로 치과 치료를 받는 도덕적 해이를 막기 위함입니다. 일반적으로 면책 기간은 90일~180일, 감액 기간은 1년~2년으로 설정됩니다. 실비보험과 달리 치아보험은 이 기간을 반드시 확인해야 합니다.</p>
+  </section>
+
+  <section id="claim-procedure">
+    <span id="claim-procedure-anchor" class="anchor"></span>
+    <h2>4. 실비보험 치과 치료 청구 절차 및 필요 서류</h2>
+    <p>실비보험으로 보장 가능한 치과 치료를 받았을 때, 청구를 위해서는 정확한 절차와 서류가 필요합니다. 특히 치과 치료비 청구는 일반 질병 청구와 달리 세부 항목을 명시해야 하므로 더욱 주의가 필요합니다.</p>
+
+    <h3>4-1. 실비보험 청구 전 확인 사항</h3>
+    <ol>
+      <li><strong>치료 내용 확인:</strong> 치료 받은 항목이 급여인지 비급여인지 치과에 문의하여 확인합니다. 실비 청구는 급여 항목에 대해서만 가능합니다.</li>
+      <li><strong>약관 확인:</strong> 가입한 실비보험 상품의 약관을 확인하여 치과 치료 보장 제외 항목을 다시 한번 확인합니다.</li>
+      <li><strong>청구 시점:</strong> 청구 시점은 치료가 완료된 후가 원칙입니다. 분할 청구도 가능하지만, 한 번에 모아서 청구하는 것이 편리합니다.</li>
+    </ol>
+
+    <h3>4-2. 청구 시 필요 서류 (급여 항목 기준)</h3>
+    <p>치과 치료 시 실비보험 청구에 필요한 서류는 다음과 같습니다. 치과에 미리 요청하여 정확하게 발급받아야 합니다.</p>
+    <ul>
+      <li><strong>진료비 계산서 영수증:</strong> 진료비의 급여/비급여 항목이 명확하게 구분된 영수증이 필요합니다.</li>
+      <li><strong>진료비 세부내역서:</strong> 어떤 치료를 받았는지 세부적으로 명시된 내역서입니다. 실비 청구 시 가장 중요한 서류입니다.</li>
+      <li><strong>초진기록지:</strong> 최초 진료 시점의 기록입니다. 질병 발생 시점을 확인하기 위해 필요합니다.</li>
+      <li><strong>진단서 또는 소견서:</strong> 의사의 진단명과 치료 필요성이 명시된 서류입니다. (보험사 요청 시 제출)</li>
+    </ul>
+  </section>
+
+  <section id="external-references">
+    <span id="external-references-anchor" class="anchor"></span>
+    <h2>5. 신뢰할 수 있는 외부 정보 참고</h2>
+    <p>실비보험 관련 정보는 금융감독원, 보건복지부 등 공신력 있는 기관의 자료를 참고하는 것이 중요합니다. 아래는 치과 치료 및 실비보험 관련 정보를 확인할 수 있는 신뢰성 있는 외부 사이트 목록입니다.</p>
+    <ul>
+      <li><a href="https://www.hira.or.kr/" target="_blank">건강보험심사평가원 (HIRA)</a>: 건강보험 적용 항목 및 의료비 심사 기준 확인.</li>
+      <li><a href="https://www.fss.or.kr/" target="_blank">금융감독원 (FSS)</a>: 보험 상품 정보, 약관, 민원 상담 정보 제공.</li>
+      <li><a href="https://www.mohw.go.kr/" target="_blank">보건복지부 (Ministry of Health and Welfare)</a>: 의료 정책 및 국민 건강 정보 확인.</li>
+      <li><a href="https://namu.wiki/w/%EC%8B%A4%EC%86%90%EC%9D%98%EB%A3%8C%EB%B3%B4%ED%97%98" target="_blank">나무위키 실손의료보험 항목</a>: 실비보험의 기본 개념 및 변천사 참고.</li>
+      <li><a href="http://www.kda.or.kr/" target="_blank">대한치과의사협회 (Korean Dental Association)</a>: 치과 의료 정책 및 치과 상식 정보 제공.</li>
+    </ul>
+    <p>이러한 공신력 있는 자료를 통해 2026년 실비보험의 변화나 치과 비급여 항목의 기준 변경 사항을 주기적으로 확인하는 것이 중요합니다.</p>
+  </section>
+
+  <section id="dental-insurance-comparison-detail">
+    <span id="dental-insurance-comparison-detail-anchor" class="anchor"></span>
+    <h2>6. 2026년 치과 치료 트렌드 및 합리적인 보험 설계 전략</h2>
+    <p>치과 치료 기술은 꾸준히 발전하고 있으며, 이에 따라 치료 방식과 비용 구조도 변화하고 있습니다. 2026년에도 심미적인 치료에 대한 수요는 증가할 것으로 예상됩니다. 실비보험의 보장 한계 속에서 합리적인 치료를 받기 위한 전략을 수립해야 합니다.</p>
+
+    <h3>6-1. 비급여 치료의 비용 상승과 대비책</h3>
+    <p>임플란트, 크라운 등 비급여 치료는 병원마다 가격이 상이하며, 물가 상승에 따라 비용이 증가하는 경향이 있습니다. 실비보험이 비급여 치료를 보장하지 않는다는 점을 고려하여, 정기적인 구강 검진과 예방 치료를 통해 고가 치료로 이어지는 것을 방지해야 합니다. 실비보험 청구만 기대해서는 안 됩니다.</p>
+
+    <h3>6-2. 그래프로 보는 연령별 치과 치료 비용 부담</h3>
+    <p style="text-align:center;"><strong>[그래프 시뮬레이션: 연령별 치과 비급여 치료비 지출 비중]</strong></p>
+    <div style="width:100%; height:200px; background:#f4f9ff; border:1px solid #ddd; border-radius:8px; display:flex; justify-content:space-around; align-items:flex-end; padding:10px; box-sizing:border-box;">
+        <div style="text-align:center; flex-basis:20%;">
+            <div style="background:#0b3d91; height:40%; border-radius:4px;"></div><p style="font-size:0.8rem;">20대</p>
+        </div>
+        <div style="text-align:center; flex-basis:20%;">
+            <div style="background:#4285f4; height:60%; border-radius:4px;"></div><p style="font-size:0.8rem;">30대</p>
+        </div>
+        <div style="text-align:center; flex-basis:20%;">
+            <div style="background:#a3c4ff; height:80%; border-radius:4px;"></div><p style="font-size:0.8rem;">40대</p>
+        </div>
+        <div style="text-align:center; flex-basis:20%;">
+            <div style="background:#ccddee; height:95%; border-radius:4px;"></div><p style="font-size:0.8rem;">50대+</p>
+        </div>
+    </div>
+    <p>위 그래프는 연령이 높아질수록 치과 비급여 치료(임플란트, 크라운 등)에 대한 지출 비중이 증가함을 보여줍니다. 2026년 이후에도 노년층 인구 증가에 따라 이러한 추세는 지속될 전망입니다.</p>
+  </section>
+
+  <section id="faq">
+    <span id="faq-anchor" class="anchor"></span>
+    <h2>자주 묻는 질문 (FAQ)</h2>
+    <dl>
+      <dt>Q1: 실비보험이 치과 치료를 보장하지 않는 이유가 무엇인가요?</dt>
+      <dd>A: 실비보험은 기본적으로 '국민건강보험법'에서 정한 급여 항목을 보장합니다. 치과 치료는 비급여 항목 비중이 높고, 치아 기능을 회복하거나 심미적인 목적의 치료가 많아 실비보험 약관에서 보장에서 제외하는 것이 일반적입니다.</dd>
+      <dt>Q2: 치과 치료를 위해 따로 '치아보험'에 가입해야 하나요?</dt>
+      <dd>A: 네, 실비보험은 비급여 항목을 보장하지 않기 때문에, 임플란트, 크라운, 인레이 등 고가 치료에 대한 보장을 원한다면 치아보험에 가입하는 것이 효과적입니다.</dd>
+      <dt>Q3: 어린이 치과 실비보험 적용은 어떻게 되나요?</dt>
+      <dd>A: 어린이 실비보험도 기본적으로 성인과 동일한 기준(급여 항목만 보장)이 적용됩니다. 하지만 일부 어린이보험 특약에서는 치아 관련 보장이 추가될 수 있으므로 약관을 확인해야 합니다.</dd>
+    </dl>
+  </section>
+
+  <section id="contact">
+    <span id="contact-anchor" class="anchor"></span>
+    <h2>전문가와 1:1 무료 상담 신청</h2>
+    <p>복잡한 실비보험 청구 기준과 치과 비급여 항목에 대한 궁금증을 전문가에게 직접 문의하세요. 개인의 상황에 맞는 맞춤형 가이드라인을 제공해 드립니다. 상담을 통해 2026년 변경되는 치과 보험 기준까지 완벽하게 파악할 수 있습니다.</p>
+    <form action="/submit" method="POST" style="max-width:600px; margin:auto;">
+      <label for="name">이름<span style="color:red;">*</span></label><br />
+      <input type="text" id="name" name="name" required style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:4px;" />
+
+      <label for="phone">연락처<span style="color:red;">*</span></label><br />
+      <input type="tel" id="phone" name="phone" required placeholder="010-1234-5678" pattern="[0-9\-]+" style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:4px;" />
+
+      <label for="age">나이대<span style="color:red;">*</span></label><br />
+      <select id="age" name="age" required style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:4px;">
+        <option value="">나이 선택</option>
+        <option value="20대 미만">20대 미만</option>
+        <option value="20대">20대</option>
+        <option value="30대">30대</option>
+        <option value="40대">40대</option>
+        <option value="50대">50대</option>
+        <option value="60대 이상">60대 이상</option>
+      </select>
+
+      <label for="current-insurance">현재 가입된 보험 유형</label><br />
+      <input type="text" id="current-insurance" name="current_insurance" placeholder="예: 2세대 실비보험, 3세대 실비보험" style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:4px;" />
+
+      <label for="treatment-needed">상담하고 싶은 치과 치료 항목 (중복 선택 가능)</label><br />
+      <div style="margin-bottom:15px;">
+        <input type="checkbox" id="treatment1" name="treatment_items" value="임플란트"><label for="treatment1"> 임플란트</label>
+        <input type="checkbox" id="treatment2" name="treatment_items" value="충치치료(레진/크라운)"><label for="treatment2"> 충치치료(레진/크라운)</label>
+        <input type="checkbox" id="treatment3" name="treatment_items" value="잇몸치료"><label for="treatment3"> 잇몸치료</label>
+        <input type="checkbox" id="treatment4" name="treatment_items" value="치아보험 가입 상담"><label for="treatment4"> 치아보험 가입 상담</label>
+      </div>
+
+      <label for="question-message">구체적인 질문 내용</label><br />
+      <textarea id="question-message" name="question_message" rows="5" style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:4px;" placeholder="예: 최근 충치 치료를 받았는데 실비 청구가 가능한지 궁금합니다. 가입한 보험 정보를 알려주시면 정확한 상담이 가능합니다."></textarea>
+
+      <button type="submit" class="btn-cta">무료 상담 신청하기</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 실비보험 치과 보장 가이드 센터. 모든 정보는 참고용이며, 정확한 내용은 약관을 확인하세요.</p>
+    <p>연락처: <a href="tel:0311234567">031‑123‑4567</a> | 이메일: <a href="mailto:help@domain.com">help@domain.com</a></p>
+  </footer>
+
+
+  
